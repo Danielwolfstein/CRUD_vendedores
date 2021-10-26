@@ -1,0 +1,60 @@
+<form action='/api/users' id="add_user" method="POST">
+    <div class="new_user">
+      <div class="form-group">
+        <label for="name" class="text-light">Nombre</label>
+        <input type="hidden" name="id" value="" />
+        <input
+          type="text"
+          name="name"
+          value=""
+          placeholder="Ingrese un nombre"
+        />
+      </div>
+      <div class="form-group">
+        <label for="Email" class="text-light">Email</label>
+        <input
+          type="text"
+          name="email"
+          value=""
+          placeholder="Ingrese un correo"
+        />
+      </div>
+      <div class="form-group">
+        <label for="gender"   class="text-light">Genero</label>
+        <div class="radio inline">
+          <input type="radio" id="radio-2" name="gender" value="Male" />
+          <label for="radio-2" class="radio-label">Hombre</label>
+        </div>
+        <div class="radio inline">
+          <input type="radio" id="radio-3" name="gender" value="Female" />
+          <label for="radio-3" class="radio-label">Mujer</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="status" class="text-light">Estado</label>
+        <div class="radio inline">
+          <input type="radio" id="radio-4" name="status" value="Active" />
+          <label for="radio-4" class="radio-label">Activo</label>
+        </div>
+        <div class="radio inline">
+          <input type="radio" id="radio-5" name="status" value="Inactive" />
+          <label for="radio-5"" class="radio-label">Inactivo</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+          <label for="sales" class="text-light">Ventas(pesos)</label>
+          <input
+            type="text"
+            name="sales"
+            value=""
+            placeholder="ventas ultimo tiempo"
+          />
+        </div>
+
+     <div class="form-group">
+         <button type="submit" class="btn text-dark update">Guardar</button>
+     </div>
+    </div>
+  </form>
