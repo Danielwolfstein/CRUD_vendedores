@@ -10,8 +10,6 @@ const connectDB= require('./server/database/connection');
 
 const app=express();
 
-dotenv.config({path:'config.env'})
-const PORT=process.env.PORT||8080
 
 //log requests
 app.use(morgan("tiny"));
@@ -36,4 +34,4 @@ app.use("/js",express.static(path.resolve(__dirname, "assets/js")))
 app.use('/', require('./server/routes/router'))
 
 
-app.listen(PORT, ()=>{console.log(`Server is running on http://localhost:${PORT}`)});
+
